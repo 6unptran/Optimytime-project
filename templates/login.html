@@ -100,9 +100,16 @@
                     <input type="checkbox"> Remember me
                 </label>
             </div>
-            <button type="button" onclick="location.href='http://127.0.0.1:8000/'"class="login">
-                Login
+            <a href="http://127.0.0.1:8000/"></a>
+            <button type="button" onclick="gotoLink(this)" value="http://127.0.0.1:8000/" class="login">
+                Log in
             </button>
+            <script>
+                function gotoLink(link){
+                    console.log(link.value)
+                    location.href="http://127.0.0.1:8000/"
+                }
+            </script>
         </form>
     </div>
 </body>
