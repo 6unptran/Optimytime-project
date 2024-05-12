@@ -17,15 +17,14 @@ model = genai.GenerativeModel(model_name="gemini-1.5-pro-latest")
 def replace_gemini(text):
      return re.sub(r"Gemini","optimize",text)
 def replace_google(text):
-     return re.sub(r"Google","một nhóm học sinh",text)
-
-
-
+     return re.sub(r"bởi Google","bởi một nhóm học sinh",text)
 
 def home(request):
     return render(request, 'home.html')
-
-
+def login(request):
+    return render(request,'login.html')
+def note(request):
+    return render(request,'note.html')
 def requests_msg(request):
     _input = request.GET.get('hehe')
     if "phương pháp học tập" in _input:
