@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>log in</title>
+    <style>
+        *{
+            margin:0;
+            padding:0;
+            box-sizing: border-box;
+            font-family: "Poppins",sans-serif;
+        }
+        body{
+            background:linear-gradient(to right, #91EAE4, #86A8E7, #7F7FD5) ;
+            width:100%;
+            min-height: 100vh;
+            padding: 10px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height:100vh;
+        }
+        .username{
+            background:rgba(30, 170, 198, 0.358) ;
+            border: 2px solid rgba(255,255,255,.2);
+            width:420px;
+            padding:30px 40px;
+            border-radius: 10px;
+            color:#fff;
+        }
+        .username h1{
+            font-size:36px;
+            text-align: center;
+        }
+        .username .input-box{
+            width: 100%;
+            height:50px;
+            margin:30px 0;
+        }
+        .input-box input{
+            width:100%;
+            height: 100%;
+            background: transparent;
+            border:none;
+            outline:none;
+            border:2px solid rgba(178, 87, 87, 0.796);
+            border-radius:40px;
+            font-size: 16px;
+            color:#fff;
+            padding: 20px 45px 20px 20px;
+        }
+        .input-box input::placeholder{
+            color:white;
+        }
+        .username .remember-forget{
+            display: flex;
+            justify-content:space-between;
+            font-size: 14.5px;
+            margin: -15px 0 15px;
+        }
+        .remember-forget label input{
+            accent-color: #fff;
+            margin-right:3px;
+        }
+        .remember-forget a{
+            color:white;
+            text-decoration: none;
+        }
+        .remember-forget a:hover{
+            text-decoration: underline;
+        }
+        .username .login{
+            width: 100%;
+            height: 45px;
+            background: #fff;
+            border: none;
+            outline: none;
+            border-radius: 40px ;
+            box-shadow: 0 0 10px rgba(0,0,0,.1);
+            cursor: pointer;
+            font-size: 16px;
+            color:#333;
+            font-weight: 600;
+        }
+    </style>
+</head>
+<body>
+    <div class="username">
+        <form action="">
+            <h1>
+                log in
+            </h1>
+            <div class="input-box">
+                <input type="text" placeholder="Enter username" required>
+            </div>
+            <div class="input-box">
+                <input type="password" placeholder="Enter password" required>
+            </div>
+            <div class="remember-forget">
+                <label>
+                    <input type="checkbox"> Remember me
+                </label>
+            </div>
+            <button type="button" onclick="location.href='http://127.0.0.1:8000/'"class="login">
+                Login
+            </button>
+        </form>
+    </div>
+</body>
